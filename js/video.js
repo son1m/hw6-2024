@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
 	updateVolume();
 
     // Turn off autoplay and looping
-    video.autoplay = false;
+    
     video.loop = false;
 });
 
