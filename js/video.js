@@ -28,12 +28,18 @@ window.addEventListener("load", function() {
 
 
 // 2. Play video button
+// document.querySelector("#play").addEventListener("click", function() {
+//     console.log("Play Video");
+//     video.play();
+// 	// 2a. update volume  
+// 	updateVolume();
+// });
+
 document.querySelector("#play").addEventListener("click", function() {
     console.log("Play Video");
-    video.play();
-	// 2a. update volume  
-	updateVolume();
-});
+    video.play().then(() => {
+        updateVolume()});
+	})
 
 
 // 3. Pause video button
