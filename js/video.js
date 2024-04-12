@@ -70,11 +70,11 @@ document.querySelector("#skip").addEventListener("click", function() {
 
 // 7. Mute button 
 document.querySelector("#mute").addEventListener("click", function() {
-	video.muted = !video.muted; // Toggle the muted state
+	video.muted = !video.muted; 
 	if (video.muted) {
-		this.textContent = 'Unmute'; // Update button text to 'Unmute'
+		this.textContent = 'Unmute'; 
 	} else {
-		this.textContent = 'Mute'; // Update button text to 'Mute'
+		this.textContent = 'Mute'; 
 	}
 	console.log("Mute button check");
 });
@@ -82,7 +82,6 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 // 8. Volume slider change
 document.querySelector("#slider").addEventListener("input", function() {
-	// Set the video volume based on the slider's value
 	video.volume = this.value / 100; 
 	updateVolume();
 });
