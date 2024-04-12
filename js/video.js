@@ -20,8 +20,9 @@ window.addEventListener("load", function() {
 	//update volume  
 	updateVolume();
 
-    // Turn off autoplay and looping
+    // Turn off autoplay and looping and update volume information
     video.autoplay = false;
+	updateVolume();
     video.loop = false;
 });
 
@@ -33,6 +34,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	// 2a. update volume  
 	updateVolume();
 });
+
 
 // 3. Pause video button
 document.querySelector("#pause").addEventListener("click", function() {
