@@ -32,7 +32,7 @@ document.querySelector("#play").addEventListener("click", function() {
     console.log("Play Video");
     video.play();
 	// 2a. update volume  
-	updateVolume();
+	document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 });
 
 
